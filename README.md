@@ -1,2 +1,2 @@
-this is my porttfolio website 
-it is a staticwebsite
+this is my portfolio website 
+it is a static website
