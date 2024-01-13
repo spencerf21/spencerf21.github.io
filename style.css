@@ -1,0 +1,125 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Apply a background color to the body */
+  body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the header section */
+  .header {
+    background-color: royalblue; /* Updated to royal blue */
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .header h1 {
+    margin-bottom: 10px;
+  }
+  
+  .header p {
+    font-size: 16px;
+  }
+  
+  /* Style the skills section */
+  .skills {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  .skills h2 {
+    color: #333;
+  }
+  
+  .skills ul {
+    list-style-type: none;
+  }
+  
+  .skills li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 8px 15px;
+    background-color: #3498db; /* Blue background color */
+    color: #fff; /* White text color */
+    border-radius: 5px;
+  }
+  
+  /* Style the education section */
+  .education {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  .education h2 {
+    color: #333;
+  }
+  
+  .education strong {
+    color: #555;
+  }
+  
+  /* Style the projects section */
+  .projects {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  .projects h2 {
+    color: #333;
+  }
+  
+  .projects strong {
+    color: #555;
+  }
+  
+  .projects p {
+    margin-bottom: 10px;
+  }
+  
+  /* Style the experience section */
+  .experience {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  .experience h2 {
+    color: #333;
+  }
+  
+  .experience strong {
+    color: #555;
+  }
+  
+  .experience p {
+    margin-bottom: 10px;
+  }
+  
+  
+  /* Style the extras section */
+  .extras {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  .extras h2 {
+    color: #333;
+  }
+  
+  .extras ul {
+    list-style-type: none;
+  }
+  
+  .extras li {
+    margin-bottom: 5px;
+  }
