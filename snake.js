@@ -11,6 +11,7 @@ let food = {
 let dx = 0,
   dy = 0;
 let score = 0;
+let directionLock = false; // Prevents multiple direction changes within one update
 
 // Draw the game board
 function drawGame() {
@@ -20,6 +21,7 @@ function drawGame() {
   drawSnake();
   drawScore();
   checkCollision();
+  directionLock = false; // Reset direction lock for the next frame
   setTimeout(drawGame, 100);
 }
 
@@ -83,20 +85,27 @@ function resetGame() {
   score = 0;
 }
 
-// Change snake direction based on arrow keys
+// Change snake direction based on arrow keys, with direction lock
 document.addEventListener("keydown", (event) => {
-  if (event.key === "ArrowUp" && dy === 0) {
-    dx = 0;
-    dy = -1;
-  } else if (event.key === "ArrowDown" && dy === 0) {
-    dx = 0;
-    dy = 1;
-  } else if (event.key === "ArrowLeft" && dx === 0) {
-    dx = -1;
-    dy = 0;
-  } else if (event.key === "ArrowRight" && dx === 0) {
-    dx = 1;
-    dy = 0;
+  if (!directionLock) {
+    // Only allow one direction change per game update
+    if (event.key === "ArrowUp" && dy === 0) {
+      dx = 0;
+      dy = -1;
+      directionLock = true;
+    } else if (event.key === "ArrowDown" && dy === 0) {
+      dx = 0;
+      dy = 1;
+      directionLock = true;
+    } else if (event.key === "ArrowLeft" && dx === 0) {
+      dx = -1;
+      dy = 0;
+      directionLock = true;
+    } else if (event.key === "ArrowRight" && dx === 0) {
+      dx = 1;
+      dy = 0;
+      directionLock = true;
+    }
   }
 });
 
