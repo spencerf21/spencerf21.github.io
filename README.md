@@ -1,2 +1,1 @@
-this is my portfolio website 
-it is a static website
+this is a snake game I made in 10 minutes
